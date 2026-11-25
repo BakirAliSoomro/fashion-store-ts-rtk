@@ -1,0 +1,102 @@
+{
+
+ 
+ "items": [
+  {
+    "id": "001",
+    "image": "images/1.jpg",
+    "company": "Carlton London",
+    "item_name": "Rhodium-Plated CZ Floral Studs",
+    "original_price": 1045,
+    "current_price": 606,
+    "discount_percentage": 42,
+    "return_period": 14,
+    "delivery_date": "10 Oct 2023",
+    "rating": { "stars": 4.5, "count": 1400 }
+  },
+  {
+    "id": "002",
+    "image": "images/2.jpg",
+    "company": "CUKOO",
+    "item_name": "Women Padded Halter Neck Swimming Dress",
+    "original_price": 2599,
+    "current_price": 1507,
+    "discount_percentage": 42,
+    "return_period": 10,
+    "delivery_date": "12 Oct 2023",
+    "rating": { "stars": 4.1, "count": 850 }
+  },
+  {
+    "id": "003",
+    "image": "images/3.jpg",
+    "company": "Roadster",
+    "item_name": "Men Slim Fit Casual Shirt",
+    "original_price": 1299,
+    "current_price": 649,
+    "discount_percentage": 50,
+    "return_period": 7,
+    "delivery_date": "09 Oct 2023",
+    "rating": { "stars": 4.3, "count": 2200 }
+  },
+  {
+    "id": "004",
+    "image": "images/4.jpg",
+    "company": "Nike",
+    "item_name": "Men Running Sports Shoes",
+    "original_price": 4995,
+    "current_price": 3496,
+    "discount_percentage": 30,
+    "return_period": 30,
+    "delivery_date": "11 Oct 2023",
+    "rating": { "stars": 4.6, "count": 5400 }
+  },
+  {
+    "id": "005",
+    "image": "images/5.jpg",
+    "company": "H&M",
+    "item_name": "Women Floral Printed A-Line Kurta",
+    "original_price": 1899,
+    "current_price": 949,
+    "discount_percentage": 50,
+    "return_period": 15,
+    "delivery_date": "13 Oct 2023",
+    "rating": { "stars": 4.2, "count": 1100 }
+  },
+  {
+    "id": "006",
+    "image": "images/6.jpg",
+    "company": "Wildcraft",
+    "item_name": "Unisex Cotton Casual Backpack",
+    "original_price": 2199,
+    "current_price": 1319,
+    "discount_percentage": 40,
+    "return_period": 20,
+    "delivery_date": "14 Oct 2023",
+    "rating": { "stars": 4.4, "count": 3200 }
+  },
+  {
+    "id": "007",
+    "image": "images/7.jpg",
+    "company": "Levi's",
+    "item_name": "Men Slim Fit Stretchable Jeans",
+    "original_price": 2999,
+    "current_price": 1799,
+    "discount_percentage": 40,
+    "return_period": 15,
+    "delivery_date": "15 Oct 2023",
+    "rating": { "stars": 4.5, "count": 4100 }
+  },
+  {
+    "id": "008",
+    "image": "images/8.jpg",
+    "company": "Zara",
+    "item_name": "Women Oversized Cotton T-Shirt",
+    "original_price": 1599,
+    "current_price": 959,
+    "discount_percentage": 40,
+    "return_period": 12,
+    "delivery_date": "16 Oct 2023",
+    "rating": { "stars": 4.0, "count": 670 }
+  }
+]
+}
