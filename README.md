@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# Fashion Store (React + TypeScript + Redux Toolkit)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A learning project: a fashion e-commerce UI where users can browse products,
+add them to a bag, and see a price summary.
 
-Currently, two official plugins are available:
+## Features
+- Product listing fetched from a REST API (json-server)
+- Add to bag / remove from bag
+- Bag page with item details and price summary (total MRP, discount, fees, total)
+- Bag is saved in localStorage, so it survives a page refresh
+- Fully responsive layout (mobile to desktop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React 19, TypeScript, Vite
+- Redux Toolkit (typed slices and hooks)
+- React Router
+- Tailwind CSS
+- json-server (mock backend)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies
+   npm install
 
-## Expanding the ESLint configuration
+2. Start the mock API (in one terminal)
+   cd server
+   npx json-server@0.17.4 --watch db.json --port 5000
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Start the app (in another terminal)
+   npm run dev
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Open http://localhost:5173
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## What I Learned
+- Typing Redux Toolkit slices with `PayloadAction`, `RootState` and `AppDispatch`
+- Typed hooks (`useAppSelector`, `useAppDispatch`)
+- Fetching data with `useEffect` and `AbortController`
+- Building responsive UI with Tailwind CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+> This is a practice project and is not affiliated with any real brand.
